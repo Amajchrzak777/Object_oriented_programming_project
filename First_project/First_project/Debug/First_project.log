@@ -1,2 +1,12 @@
 ﻿  First_project.cpp
-  First_project.vcxproj -> C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\Debug\First_project.exe
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\First_project.cpp(9,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'Objects.hpp': No such file or directory
+  include.hpp
+  Objects.cpp
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\Classes.hpp(5,11): error C2011: "Map'': "class" wpisz ponownie definicję
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\Classes.hpp(1): message : zobacz deklarację „Map”
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\Classes.hpp(20,12): error C2011: "Move'': "class" wpisz ponownie definicję
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\Classes.hpp(2): message : zobacz deklarację „Move”
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\Classes.hpp(32,14): error C2011: "Person'': "class" wpisz ponownie definicję
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\Classes.hpp(3): message : zobacz deklarację „Person”
+C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project\First_project\Objects.cpp(1,10): fatal error C1014: zawiera zbyt wiele plików dołączanych: głębokość = 1024
+  Generowanie kodu...
