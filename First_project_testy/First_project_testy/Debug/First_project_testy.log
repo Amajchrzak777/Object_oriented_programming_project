@@ -1,0 +1,8 @@
+﻿  Objects.cpp
+C:\Users\Adaś\Desktop\Testy\First_project_testy\First_project_testy\Classes.h(15,12): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Adaś\Desktop\Testy\First_project_testy\First_project_testy\Classes.h(15,22): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Adaś\Desktop\Testy\First_project_testy\First_project_testy\Classes.h(15,32): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Adaś\Desktop\Testy\First_project_testy\First_project_testy\Classes.h(15,42): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Adaś\Desktop\Testy\First_project_testy\First_project_testy\Classes.h(15,53): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Adaś\Desktop\Testy\First_project_testy\First_project_testy\Classes.h(15,64): warning C4309: "inicjowanie": obcięcie stałej wartości
+  First_project_testy.vcxproj -> C:\Users\Adaś\Desktop\Testy\First_project_testy\Debug\First_project_testy.exe
