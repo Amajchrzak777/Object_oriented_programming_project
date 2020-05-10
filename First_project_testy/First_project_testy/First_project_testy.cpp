@@ -1,17 +1,24 @@
-﻿// First_project_testy.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//
+﻿#include <iostream>
+#include <cstdlib>
+#include <conio.h>
+#include <ctime>
+#include <windows.h>
+#include "Human.h"
 
-#include "includes.h"
-#include "Classes.h"
 
+class Organism;
 
 int main()
 {
+	int x1 = 5;
+	int y1 = 5;
+	const char w1 = 'W';
 	srand(time(NULL));
-	Map* m = new Map();
-	m->dimension_of_board();
-	m->key_to_play();
-	m->initialize_fields();
-	m->give_the_coordinates();
-	m->draw_the_map();
+	Map m;
+	//m.dimension_of_board();
+	m.key_to_play();
+	m.initialize_fields();
+	m.give_the_coordinates();
+	m.add_organism(new Organism(x1, y1, w1));
+	m.game();
 }
