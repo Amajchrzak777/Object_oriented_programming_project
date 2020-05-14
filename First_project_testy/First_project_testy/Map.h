@@ -10,8 +10,7 @@ class Map {
 protected:
 	int coordinate_x;
 	int coordinate_y;
-	const int width = 15;
-	const int height = 15;
+	
 	int upper, lower, right, left;
 	int dimension = 1;
 	int history_x_coordinate[10000];
@@ -23,6 +22,8 @@ protected:
 	char fields[30][30];
 	char new_fields[30][30];
 public:
+	const int width = 15;
+	const int height = 15;
 	void draw_the_map();
 	void draw_the_map_new();
 	//void dimension_of_board();

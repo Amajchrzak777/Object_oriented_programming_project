@@ -39,22 +39,12 @@ void Human::action()
 			if (klawisz == upper) this->Set_Y(Get_Y() - 1);
 			if (klawisz == left) this->Set_X(Get_X() - 1);
 			if (klawisz == right) this->Set_X(Get_X() + 1);
-
-			
-			/*if (klawisz == lower) kierunek = 'd';
-			if (klawisz == upper) kierunek = 'g';
-			if (klawisz == left) kierunek = 'l';
-			if (klawisz == right) kierunek = 'p';*/
+	
+			if (this->Get_X() >= this->map.get_size_w()) this->Set_X(Get_X() - 1);
+			if (this->Get_X() < 0) this->Set_X(Get_X() + 1);
+			if (this->Get_Y() >= this->map.get_size_h()) this->Set_Y(Get_Y() - 1);
+			if (this->Get_Y() < 0) this->Set_Y(Get_Y() + 1); 
 			return;
 		}
 	}
-	/*if (kierunek == 'd')this->Set_Y(Get_Y() + 1);
-	if (kierunek == 'g')this->Set_Y(Get_Y() - 1);
-	if (kierunek == 'l')this->Set_X(Get_X() - 1);
-	if (kierunek == 'p')this->Set_X(Get_X() + 1);*/
-	//fields[Get_X()][Get_Y()] = 'H';
-    /*if (this->Get_X == width) *this->Get_X = 0;
-    if (coordinate_x == -1) coordinate_x = width - 1;
-    if (coordinate_y == height) coordinate_y = 0;
-    if (coordinate_y == -1) coordinate_y = height - 1;*/
 }

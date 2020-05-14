@@ -2,6 +2,8 @@
 
 class Organism;
 
+class Map;
+
 class Sheep : public Organism {
 public:
 	Sheep(Map& map, const int& x, const int& y, const char& symbol);
