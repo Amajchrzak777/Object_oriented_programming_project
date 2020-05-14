@@ -3,10 +3,11 @@
 #include <conio.h>
 #include <ctime>
 #include <windows.h>
-#include "Human.h"
+#include "Map.h"
 
-
+class Map;
 class Organism;
+class Human;
 
 int main()
 {
@@ -19,6 +20,7 @@ int main()
 	m.key_to_play();
 	m.initialize_fields();
 	m.give_the_coordinates();
-	m.add_organism(new Organism(x1, y1, w1));
+	m.add_organism(new Human(m,3, 3, 'D'));
+	m.add_organism(new Sheep(m, 5, 10, 'S'));
 	m.game();
 }

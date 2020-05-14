@@ -1,12 +1,17 @@
-#include "Map.h"
+#include "Organism.h"
+
+
+class Organism;
 
 class Map;
 
-class Human : public Map {
-	int ss;
+class Human : public Organism {
+	int upper, lower, right, left, klawisz;
+	char kierunek;
 public:
-	Human() {}
-	char z = 'H';
-	void move(char z);
-	void give_the_coordinates(char z);
+	Human(Map& map, const int& x, const int& y, const char& symbol);
+	~Human();
+	
+	const void key();
+	void action() override;
 };

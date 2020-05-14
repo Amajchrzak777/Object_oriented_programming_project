@@ -1,8 +1,10 @@
-﻿  Map.cpp
-C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(23,12): warning C4309: "inicjowanie": obcięcie stałej wartości
-C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(23,22): warning C4309: "inicjowanie": obcięcie stałej wartości
-C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(23,32): warning C4309: "inicjowanie": obcięcie stałej wartości
-C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(23,42): warning C4309: "inicjowanie": obcięcie stałej wartości
-C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(23,53): warning C4309: "inicjowanie": obcięcie stałej wartości
-C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(23,64): warning C4309: "inicjowanie": obcięcie stałej wartości
-  First_project_testy.vcxproj -> C:\Users\Adaś\Desktop\object_project\Object_oriented_programming_project\First_project_testy\Debug\First_project_testy.exe
+﻿  Human.cpp
+C:\Users\Admin\Desktop\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(21,12): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Admin\Desktop\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(21,22): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Admin\Desktop\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(21,32): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Admin\Desktop\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(21,42): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Admin\Desktop\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(21,53): warning C4309: "inicjowanie": obcięcie stałej wartości
+  Sheep.cpp
+  Generowanie kodu...
+C:\Users\Admin\Desktop\Object_oriented_programming_project\First_project_testy\First_project_testy\Map.h(21,64): warning C4309: "inicjowanie": obcięcie stałej wartości
+  First_project_testy.vcxproj -> C:\Users\Admin\Desktop\Object_oriented_programming_project\First_project_testy\Debug\First_project_testy.exe

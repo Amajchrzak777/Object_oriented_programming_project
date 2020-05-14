@@ -1,13 +1,20 @@
 ﻿#include "Map.h"
 #include "includes.h"
 
+static void gotoxy(int x, int y) {
+	COORD pos;
+	pos.X = x + 1;
+	pos.Y = y + 1;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+};
+
 void Map::game() {
     for (;;) {
-        system("cls");
+		system("cls");
         draw_the_map();
-        Sleep(500);
-        use_key();
-        move();
+        Sleep(100);
+		do_round();
+		move();
     }
 }
 
@@ -28,6 +35,7 @@ void Map::draw_the_map() {
 
         for (int j = 0; j < width; ++j) {
             std::cout << fields[j][i];
+			new_fields[j][i] = fields[j][i];
         }
         //rysuje prawy bok
         std::cout << pio;
@@ -42,6 +50,20 @@ void Map::draw_the_map() {
     std::cout << pd;
 }
 
+void Map::draw_the_map_new()
+{
+	for (size_t yR = 0; yR < height; yR++) {
+		for (size_t xR = 0; xR < width; xR++) {
+			if (fields[yR][xR] != new_fields[yR][xR]) {
+				gotoxy(xR, yR);
+				std::cout << fields[yR][xR];
+				new_fields[yR][xR] = fields[yR][xR];
+		
+			}
+		}
+	}
+}
+
 void Map::give_the_coordinates() {
     coordinate_x = rand() % height;
     coordinate_y = rand() % width;
@@ -49,9 +71,10 @@ void Map::give_the_coordinates() {
 }
 
 void Map::initialize_fields() {
-    for (int i = 0; i < height; ++i) {
-        for (int j = 0; j < width; ++j) {
+    for (int i = 1; i < height-1; ++i) {
+        for (int j = 1; j < width-1; ++j) {
             fields[j][i] = ' ';
+			new_fields[j][i] = ' ';
         }
     }
 }
@@ -76,6 +99,7 @@ void Map::key_to_play() {
 }
 
 void Map::move() {
+	use_key();
     if (kierunek == 'd')coordinate_y++;
     if (kierunek == 'g')coordinate_y--;
     if (kierunek == 'l')coordinate_x--;
@@ -103,10 +127,32 @@ void Map::use_key() {
     }
 }
 
+const int Map::get_size_h()
+{
+	return this->height;
+}
+
+const int Map::get_size_w()
+{
+	return this->width;
+}
+
 const void Map::add_organism(Organism* new_organism)
 {
     all_organisms.push_back(new_organism);
     fields[new_organism->Get_X()][new_organism->Get_Y()] = new_organism->Get_Symbol();
+}
+
+const void Map::do_round()
+{
+	std::vector<Organism*> organism_tmp = all_organisms;
+	for (auto n : organism_tmp) n->action();
+
+	for (auto m : all_organisms) {
+		if (fields[m->Get_X()][m->Get_Y()] != m->Get_Symbol())
+			fields[m->Get_X()][m->Get_Y()] = m->Get_Symbol();
+	}
+
 }
 
 
@@ -151,3 +197,4 @@ const void Map::add_organism(Organism* new_organism)
 //    if (left == 224) left += _getch();
 //    if (left == 0) left -= _getch();
 //}
+

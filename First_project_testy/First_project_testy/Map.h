@@ -1,6 +1,5 @@
 #include <vector>
-#include "Organism.h"
-
+#include "Sheep.h"
 
 class Organism;
 
@@ -13,7 +12,6 @@ protected:
 	int coordinate_y;
 	const int width = 15;
 	const int height = 15;
-	char fields[30][30];
 	int upper, lower, right, left;
 	int dimension = 1;
 	int history_x_coordinate[10000];
@@ -22,8 +20,11 @@ protected:
 	int klawisz;
 	char pd = 188, pg = 187, lg = 201, ld = 200, poz = 205, pio = 186;
 	char kierunek;
+	char fields[30][30];
+	char new_fields[30][30];
 public:
 	void draw_the_map();
+	void draw_the_map_new();
 	//void dimension_of_board();
 	void game();
 	void give_the_coordinates();
@@ -32,10 +33,10 @@ public:
 	void move();
 	void use_key();
 
+	const int get_size_h();
+	const int get_size_w();
+
 	const void add_organism(Organism* new_organism);
+	const void do_round();
 };
 
-//class Move {
-//public:
-//
-//};
