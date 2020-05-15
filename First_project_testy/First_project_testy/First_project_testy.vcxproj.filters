@@ -9,43 +9,64 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Pliki zasobów">
+    <Filter Include="Pliki nagłówkowe\Map">
+      <UniqueIdentifier>{10e23875-3690-488f-9348-ad98256f9f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Abstract_Organism">
+      <UniqueIdentifier>{da69cf37-db93-428d-94d8-339cf6a67c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Pliki zasobów">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Abstract_Organism\Animal">
+      <UniqueIdentifier>{e8648bcf-be68-416d-9f4e-63def8cb30d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Abstract_Organism\Animal\Human">
+      <UniqueIdentifier>{784c0e55-9700-4654-87d9-25bd5e0853ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Abstract_Organism\Animal\Creatures">
+      <UniqueIdentifier>{da31928f-ff02-4d58-8e7c-1f465fff047d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="First_project_testy.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Organism.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="Human.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki nagłówkowe\Abstract_Organism\Animal\Human</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Pliki nagłówkowe\Map</Filter>
     </ClCompile>
     <ClCompile Include="Sheep.h">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki nagłówkowe\Abstract_Organism\Animal\Creatures</Filter>
     </ClCompile>
     <ClCompile Include="Sheep.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki nagłówkowe\Abstract_Organism\Animal\Creatures</Filter>
+    </ClCompile>
+    <ClCompile Include="Organism.cpp">
+      <Filter>Pliki nagłówkowe\Abstract_Organism</Filter>
+    </ClCompile>
+    <ClCompile Include="Animal.cpp">
+      <Filter>Pliki nagłówkowe\Abstract_Organism\Animal</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Map.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="Human.h">
+      <Filter>Pliki nagłówkowe\Abstract_Organism\Animal\Human</Filter>
     </ClInclude>
-    <ClInclude Include="Includes.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="Map.h">
+      <Filter>Pliki nagłówkowe\Map</Filter>
     </ClInclude>
     <ClInclude Include="Organism.h">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki nagłówkowe\Abstract_Organism</Filter>
     </ClInclude>
-    <ClInclude Include="Human.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="Includes.h">
+      <Filter>Pliki nagłówkowe\Pliki zasobów</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Pliki nagłówkowe\Abstract_Organism\Animal</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
