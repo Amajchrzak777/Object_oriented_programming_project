@@ -2,7 +2,7 @@
 #include <time.h>
 #include <Windows.h>
 
-Sheep::Sheep(Map& map,const int& strength, const int& x, const int& y, const char& symbol) : Organism(map,strength, x, y, symbol)
+Sheep::Sheep(Map& map,const int& strength, const int& x, const int& y, const char& symbol) : Animal(map,strength, x, y, symbol)
 {
 }
 

@@ -1,8 +1,7 @@
 #include <iostream>
-#include "Organism.h"
-
+#include "Map.h"
 Organism::Organism(Map & map,const int& strength, const int& x, const int& y,const char& symbol)
-	: map(map), x(x), y(y), symbol(symbol)
+	: map(map),strength(strength), x(x), y(y), symbol(symbol)
 {
 }
 

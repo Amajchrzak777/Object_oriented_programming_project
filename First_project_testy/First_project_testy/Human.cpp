@@ -2,7 +2,7 @@
 #include <conio.h>
 #include "Map.h"
 
-Human::Human(Map& map,const int& strength, const int& x, const int& y, const char& symbol) : Organism(map,strength, x, y, symbol)
+Human::Human(Map& map,const int& strength, const int& x, const int& y, const char& symbol) : Animal(map,strength, x, y, symbol)
 {
 }
 
