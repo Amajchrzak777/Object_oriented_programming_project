@@ -80,6 +80,16 @@ const int Map::get_size_w()
 	return this->width;
 }
 
+const int Map::Get_Field(const int& x, const int& y)
+{
+	return this->fields[x][y];
+}
+
+const void Map::Set_Field(const int& x, const int& y, const char& symbol)
+{
+	this->fields[x][y] = symbol;
+}
+
 const void Map::add_organism(Organism* new_organism)
 {
     all_organisms.push_back(new_organism);

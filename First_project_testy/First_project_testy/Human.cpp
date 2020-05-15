@@ -2,7 +2,7 @@
 #include <conio.h>
 #include "Map.h"
 
-Human::Human(Map& map, const int& x, const int& y, const char& symbol) : Organism(map, x, y, symbol)
+Human::Human(Map& map,const int& strength, const int& x, const int& y, const char& symbol) : Organism(map,strength, x, y, symbol)
 {
 }
 
@@ -35,11 +35,22 @@ void Human::action()
 			if (klawisz == 224) klawisz += _getch();
 			if (klawisz == 0) klawisz -= _getch();
 
-			if (klawisz == lower) this->Set_Y(Get_Y() + 1);
-			if (klawisz == upper) this->Set_Y(Get_Y() - 1);
-			if (klawisz == left) this->Set_X(Get_X() - 1);
-			if (klawisz == right) this->Set_X(Get_X() + 1);
-	
+			if (klawisz == lower) {
+				this->map.Set_Field(this->Get_X(), this->Get_Y(), ' ');
+				this->Set_Y(Get_Y() + 1);
+			}
+			if (klawisz == upper) {
+				this->map.Set_Field(this->Get_X(), this->Get_Y(), ' ');
+				this->Set_Y(Get_Y() - 1);
+			}
+			if (klawisz == left) {
+				this->map.Set_Field(this->Get_X(), this->Get_Y(), ' ');
+				this->Set_X(Get_X() - 1);
+			}
+			if (klawisz == right) {
+				this->map.Set_Field(this->Get_X(), this->Get_Y(), ' ');
+				this->Set_X(Get_X() + 1);
+			}
 			if (this->Get_X() >= this->map.get_size_w()) this->Set_X(Get_X() - 1);
 			if (this->Get_X() < 0) this->Set_X(Get_X() + 1);
 			if (this->Get_Y() >= this->map.get_size_h()) this->Set_Y(Get_Y() - 1);

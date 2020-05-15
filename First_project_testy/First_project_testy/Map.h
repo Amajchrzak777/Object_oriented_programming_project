@@ -28,14 +28,15 @@ public:
 	void draw_the_map_new();
 	//void dimension_of_board();
 	void game();
-	void give_the_coordinates();
+
 	void initialize_fields();
-	void key_to_play();
-	void move();
-	void use_key();
 
 	const int get_size_h();
 	const int get_size_w();
+
+
+	const int Get_Field(const int& x, const int& y);
+	const void Set_Field(const int& x, const int& y, const char& symbol);
 
 	const void add_organism(Organism* new_organism);
 	const void do_round();

@@ -3,13 +3,15 @@ class Map;
 class Organism {
 	int x, y;
 	char symbol;
+	int strength;
 protected:
 	Map& map;
 public:
 	/*Map & map;*/
-	Organism(Map & map ,const int& x,const int& y,  const char& symbol);
+	Organism(Map & map,const int& strength ,const int& x,const int& y,  const char& symbol);
 	~Organism();
 	//nadaj wspó³rzêdne
+	const int Get_Strength();
 	const int Get_X();
 	const int Get_Y();
 	const char Get_Symbol();

@@ -1,13 +1,18 @@
 #include <iostream>
 #include "Organism.h"
 
-Organism::Organism(Map & map, const int& x, const int& y,const char& symbol)
+Organism::Organism(Map & map,const int& strength, const int& x, const int& y,const char& symbol)
 	: map(map), x(x), y(y), symbol(symbol)
 {
 }
 
 Organism::~Organism()
 {
+}
+
+const int Organism::Get_Strength()
+{
+	return this->strength;
 }
 
 const int Organism::Get_X()
